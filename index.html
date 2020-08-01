@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+       <h2 class="title">Welcome </h2>
+
+    <section></section>
+    <div class="container">
+        <h2>Welcome To My Website</h2>
+    
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore sequi deserunt maxime voluptates obcaecati
+            ex ad, itaque blanditiis accusantium numquam fugit quae eaque voluptatem at a eos reprehenderit possimus
+            bea.
+        <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis distinctio, omnis tempore ab culpa nobis, aliquid facere voluptatem voluptate adipisci in saepe labore, laboriosam quos dolore inventore velit quibusdam. Non, reprehenderit. Facilis ea, tempore eligendi quo, sed fugit recusandae cum architecto minima quisquam, aliquam earum aut? Et autem asperiores perferendis.br <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officiis, eos provident voluptatem, aliquam minima veritatis, nisi tempora culpa minus voluptates assumenda! Ex facere repellat delectus qam maxime laudantium quibusdam!</p>
+        <br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore sequi deserunt maxime voluptates obcaecati
+            ex ad, itaque blanditiis accusantium numquam fugit quae eaque voluptatem at a eos reprehenderit possimus
+            beatae amet sit perspiciatis suscipit quo impedit? Reiciendis ipsum at, voluptatibus quos eum a accusantium,
+            nesciunt asperiores dicta dolores modi velit.
+        <br>Lorem ip.aepe labore, laboriosam quos dolore inventore velit quibusdam. Non, reprehenderit. Facilis ea, tempore eligendi quo, sed fugit recusandae cum architecto minima quisquam, aliquam earum aut? Et autem asperiores perferendis.br <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officiis, eos provident voluptatem, aliquam minima veritatis, nisi tempora culpa minus voluptates assumenda! Ex facere repellat delectus quam maxime laudantium quibusdam!</p>
+        <br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore sequi deserunt maxime voluptates obcaecati
+            ex adodi velit.
+        <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis distinctio, omnis tempore ab culpa nobis, aliquid facere voluptatem voluptate adipisci in saepe labore, laboriosam quos dolore inventore velit quibusdam. Non, reprehenderit. Facilis ea, tempore eligendi quo, sed fugit recusandae cum architecto minima quisquam, aliquam earum aut? Et autem asperiores perferendis.br <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officiis, eos provident voluptatem, aliquam minima veritatis, nisi tempora culpa minus voluptates assumenda! Ex facere repellat delectus quam maxime laudantium quibusdam!</p>
+        </div>
+        <script type="text/javascript">
+            var section = document.querySelector('section');
+            window.addEventListener('scroll', function(){
+                var value = scrollY;
+                section.style.clipPath = "circle("+ value +"px at center)"
+            })
+            var container = document.querySelector('.container')
+            window.addEventListener('mousemove', function(e) {
+                var x = e.offsetX;
+                var y = e.offsetY;
+                console.log("X= "+ x, "Y= "+y)
+                container.style.background = "linear-gradient("+ y +"deg,rgb("+ x +", "+ 0 +", "+ x +"),rgb("+ 113 +", "+ 1 +", "+ y +")";
+                container.style.color = "rgb("+ y +", "+ y +", "+ y +")";
+            })
+
+        </script>
+</body>
+
+</html>
